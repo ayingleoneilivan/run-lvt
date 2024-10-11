@@ -1,6 +1,22 @@
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
 }
+
+/* login icons */
+.ph-google-logo, .ph-github-logo{
+    font-size: 25px;
+}
+
+/* login icons */
+.ph-envelope-simple, .ph-key{
+    font-size: 20px;
+}
+
+/* navbar icons */
+.ph-bag, .ph-heart-straight, .ph-user{
+    font-size: 20px;
+}
+

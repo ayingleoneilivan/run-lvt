@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css'); }}">
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
+        <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <title>UP TREND</title>
     </head>
@@ -32,8 +33,8 @@
 
             <div class="absolute sm:static collapse sm:visible">
                 <div class="space-x-4">
-                <button href="#"><i class="fa-regular fa-user"></i></button>
-                <button href="#"><i class="fa-regular fa-heart"></i></button>
+                <button href="#"><i class="ph-bold ph-user"></i></button>
+                <button href="#"><i class="ph-bold ph-heart-straight"></i></button>
                 <button href="#"><i class="ph-bold ph-bag"></i></button>
                 
                 
@@ -110,34 +111,6 @@
                     <p class="py-2 font-semibold">₱4,719</p></a>
                 </div>
             </div>
-            <div class="group">
-                <a href=""><img src="{{ URL('images/shoes/sswhitegreen.jpg') }}" alt="" class="object-cover main-image"></a>
-                <div class="pt-1 hidden group-hover:inline-flex grid-cols-2 gap-[2px]">
-                    <a href=""><img src="{{ URL('images/shoes/sswhitenavyblue.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[1px] hover:bg-black"></a>
-                    <a href=""><img src="{{ URL('images/shoes/ssblack.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[1px] hover:bg-black"></a>
-                    
-                </div>
-                <div class="py-4"><a href="">
-                    <p class="font-semibold">Air Jordan 1 Mid</p>
-                    <p>Women's Shoes</p>
-                    <p>2 Colours</p>
-                    <p class="py-2 font-semibold">₱4,719</p></a>
-                </div>
-            </div>
-            <div class="group">
-                <a href=""><img src="{{ URL('images/shoes/sswhitegreen.jpg') }}" alt="" class="object-cover main-image"></a>
-                <div class="pt-1 hidden group-hover:inline-flex grid-cols-2 gap-[2px]">
-                    <a href=""><img src="{{ URL('images/shoes/sswhitenavyblue.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[1px] hover:bg-black"></a>
-                    <a href=""><img src="{{ URL('images/shoes/ssblack.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[1px] hover:bg-black"></a>
-                    
-                </div>
-                <div class="py-4"><a href="">
-                    <p class="font-semibold">Air Jordan 1 Mid</p>
-                    <p>Women's Shoes</p>
-                    <p>2 Colours</p>
-                    <p class="py-2 font-semibold">₱4,719</p></a>
-                </div>
-            </div>
             
             
 
@@ -148,51 +121,3 @@
 
     </body>
 </html>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const groups = document.querySelectorAll('.group');
-
-        groups.forEach(function(group) {
-            const mainImage = group.querySelector('.main-image');
-            const hoverImages = group.querySelectorAll('.hover-image');
-            let originalSrc = mainImage.src;
-
-            hoverImages.forEach(function(hoverImage) {
-                hoverImage.addEventListener('mouseover', function() {
-                    mainImage.src = hoverImage.src;
-                });
-
-                hoverImage.addEventListener('mouseout', function() {
-                    mainImage.src = originalSrc;
-                });
-
-                hoverImage.addEventListener('click', function() {
-                    originalSrc = hoverImage.src;
-                    mainImage.src = hoverImage.src;
-                });
-            });
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const increaseButtons = document.querySelectorAll('.increase-quantity');
-        const decreaseButtons = document.querySelectorAll('.decrease-quantity');
-
-        increaseButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                const input = this.nextElementSibling;
-                input.value = parseInt(input.value) + 1;
-            });
-        });
-
-        decreaseButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                const input = this.previousElementSibling;
-                if (parseInt(input.value) > 1) {
-                    input.value = parseInt(input.value) - 1;
-                }
-            });
-        });
-    });
-</script>
