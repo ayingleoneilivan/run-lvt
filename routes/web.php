@@ -14,10 +14,14 @@ Route::get('/viewshoes', function () {
     return view('viewshoes');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/signin', function () {
+    return view('signin');
 });
 
 Route::get('/signup', function () {
     return view('signup');
+});
+
+Route::get('/checkout', function () {
+    return view('checkout');
 });
