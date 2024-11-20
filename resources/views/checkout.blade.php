@@ -10,7 +10,7 @@
         <title>UP TREND</title>
     </head>
 
-<body>
+    <body>
     <div class="sticky top-0 z-10">
     <nav class="w-full sm:flex justify-between p-2 sm:p-4 lg:px-32 md:px-20 sm:px-14 items-center bg-white shadow-md">
             <div class="flex justify-center">
@@ -23,19 +23,19 @@
                         <a href="/shoes" class="font-semibold">Men</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Women</a>
+                        <a href="/shoes" class="font-semibold ">Women</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Kids</a>
+                        <a href="/shoes" class="font-semibold ">Kids</a>
                     </li>
                 </ul>
             </div>
 
             <div class="absolute sm:static collapse sm:visible">
                 <div class="space-x-4">
-                <button href="#"><i class="ph-bold ph-user"></i></button>
-                <button href="#"><i class="ph-bold ph-heart-straight"></i></button>
-                <button href="#"><i class="ph-bold ph-bag"></i></button>
+                <a href="/signin"><i class="ph-bold ph-user"></i></a>
+                <a href="/signin"><i class="ph-bold ph-heart-straight"></i></a>
+                <a href="/checkout"><i class="ph-bold ph-bag"></i></a>
                 
                 
                 </div>
@@ -81,6 +81,37 @@
                 </div>
               </div>
             </div>
+
+            <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm  md:p-6">
+              <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                <a href="#" class="shrink-0 md:order-1">
+                  <img class="h-40" src="{{ URL('images/shoes/sambaOG.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                </a>
+
+                <div class="flex items-center justify-between md:order-3 md:justify-end">
+                  <div class="flex items-center">
+                    <button class="increase-quantity px-2 border rounded-l-lg border-gray-300 border-r-0 hover:bg-black hover:text-white">+</button><input type="number" value="1" min="1" class="w-12 text-center border border-gray-300"><button class="decrease-quantity px-2 border rounded-r-lg border-gray-300 border-l-0 hover:bg-black hover:text-white">-</button>
+                  </div>
+                  <div class="text-end md:order-4 md:w-32">
+                    <p class="text-base font-bold text-gray-900 ">₱6,800</p>
+                  </div>
+                </div>
+
+                <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
+                  <div>
+                  <a href="#" class="text-base font-medium text-gray-900 hover:underline ">Samba OG</a>
+                  <p>Men's Shoes</p>
+                  <p class="text-gray-500">White Black</p>
+                  </div>
+
+                  <div class="flex items-center gap-4">
+                    <button class="text-sm font-medium hover:underline"><i class="fa-regular fa-heart me-1.5"></i>Add to Favorites</button>
+                    <button class="text-sm font-medium hover:underline text-red-600"><i class="fa-solid fa-x me-1.5 text-red-600"></i>Remove</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
             
           </div>
         </div>
@@ -93,7 +124,7 @@
               <div class="space-y-2">
                 <dl class="flex items-center justify-between gap-4">
                   <dt class="text-base font-normal text-gray-500">Bag</dt>
-                  <dd class="text-base font-medium text-gray-900 ">₱4,719.00</dd>
+                  <dd class="text-base font-medium text-gray-900 ">₱11,519.00</dd>
                 </dl>
                 <dl class="flex items-center justify-between gap-4">
                   <dt class="text-base font-normal text-gray-500">Shipping Fee</dt>
@@ -104,7 +135,7 @@
 
               <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
                 <dt class="text-base font-bold text-gray-900 ">Total</dt>
-                <dd class="text-base font-bold text-gray-900 ">₱5,218.00</dd>
+                <dd class="text-base font-bold text-gray-900 ">₱12,018.00</dd>
               </dl>
             </div>
 

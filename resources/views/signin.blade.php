@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css'); }}">
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
+        <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <title>UP TREND</title>
     </head>
 
-<body>
+    <body>
     <div class="sticky top-0 z-10">
     <nav class="w-full sm:flex justify-between p-2 sm:p-4 lg:px-32 md:px-20 sm:px-14 items-center bg-white shadow-md">
             <div class="flex justify-center">
@@ -22,19 +23,19 @@
                         <a href="/shoes" class="font-semibold">Men</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Women</a>
+                        <a href="/shoes" class="font-semibold ">Women</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Kids</a>
+                        <a href="/shoes" class="font-semibold ">Kids</a>
                     </li>
                 </ul>
             </div>
 
             <div class="absolute sm:static collapse sm:visible">
                 <div class="space-x-4">
-                <button href="#"><i class="ph-bold ph-user"></i></button>
-                <button href="#"><i class="ph-bold ph-heart-straight"></i></button>
-                <button href="#"><i class="ph-bold ph-bag"></i></button>
+                <a href="/signin"><i class="ph-bold ph-user"></i></a>
+                <a href="/signin"><i class="ph-bold ph-heart-straight"></i></a>
+                <a href="/checkout"><i class="ph-bold ph-bag"></i></a>
                 
                 
                 </div>

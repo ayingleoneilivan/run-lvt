@@ -23,19 +23,19 @@
                         <a href="/shoes" class="font-semibold">Men</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Women</a>
+                        <a href="/shoes" class="font-semibold ">Women</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Kids</a>
+                        <a href="/shoes" class="font-semibold ">Kids</a>
                     </li>
                 </ul>
             </div>
 
             <div class="absolute sm:static collapse sm:visible">
                 <div class="space-x-4">
-                <button href="#"><i class="ph-bold ph-user"></i></button>
-                <button href="#"><i class="ph-bold ph-heart-straight"></i></button>
-                <button href="#"><i class="ph-bold ph-bag"></i></button>
+                <a href="/signin"><i class="ph-bold ph-user"></i></a>
+                <a href="/signin"><i class="ph-bold ph-heart-straight"></i></a>
+                <a href="/checkout"><i class="ph-bold ph-bag"></i></a>
                 
                 
                 </div>
@@ -43,7 +43,17 @@
         </nav>
     </div>
 
+    
     <div class="p-10 sm:p-20">
+
+    <div class="mb-4">
+        <div id="myBtnContainer" class="text-black justify-center space-x-4 font-semibold">
+            <button class="btn active: underline underline-offset-8" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn text-gray-400" onclick="filterSelection('NewArrivals')"> New Arrivals</button>
+            <button class="btn text-gray-400" onclick="filterSelection('Originals')"> Originals</button>
+        </div>
+    </div>
+
     <div class="flex justify-center">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
 
@@ -57,8 +67,8 @@
                     <div class="py-4 flex justify-between">
                         <div class=""><a href="">
                             <p class="font-semibold">Air Jordan 1</p>
-                            <p>Women's Shoes</p>
-                            <p>2 Colours</p>
+                            <p>Men's Shoes</p>
+                            <p>3 Colours</p>
                             <p class="mt-2 font-semibold">₱4,719</p></a>
                         </div>
                         <div class="flex flex-col items-end justify-end space-y-2">
@@ -77,15 +87,15 @@
                 <a href=""><img src="{{ URL('images/shoes/sambaog.jpg') }}" alt="" class="object-cover main-image"></a>
                     <div class="pt-1 hidden group-hover:inline-flex gap-[2px]">
                         <img src="{{ URL('images/shoes/sambaog.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackwhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackred.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/sambaogwhitegreen.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/sambaogwhitered.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
                     </div>
                     <div class="py-4 flex justify-between">
                         <div class=""><a href="">
                             <p class="font-semibold">Samba OG</p>
-                            <p>Women's Shoes</p>
-                            <p>2 Colours</p>
-                            <p class="mt-2 font-semibold">₱4,719</p></a>
+                            <p>Men's Shoes</p>
+                            <p>3 Colours</p>
+                            <p class="mt-2 font-semibold">₱6,800</p></a>
                         </div>
                         <div class="flex flex-col items-end justify-end space-y-2">
                             <div class="">
@@ -103,15 +113,15 @@
                 <a href=""><img src="{{ URL('images/shoes/sswhitegreen.jpg') }}" alt="" class="object-cover main-image"></a>
                     <div class="pt-1 hidden group-hover:inline-flex gap-[2px]">
                         <img src="{{ URL('images/shoes/sswhitegreen.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackwhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackred.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/sswhitenavyblue.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/ssblack.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
                     </div>
                     <div class="py-4 flex justify-between">
                         <div class=""><a href="">
                             <p class="font-semibold">Stan Smith</p>
-                            <p>Women's Shoes</p>
-                            <p>2 Colours</p>
-                            <p class="mt-2 font-semibold">₱4,719</p></a>
+                            <p>Men's Shoes</p>
+                            <p>3 Colours</p>
+                            <p class="mt-2 font-semibold">₱4,900</p></a>
                         </div>
                         <div class="flex flex-col items-end justify-end space-y-2">
                             <div class="">
@@ -126,18 +136,18 @@
             </div>
 
             <div class="group">
-                <a href=""><img src="{{ URL('images/shoes/aj1midwhite.jpg') }}" alt="" class="object-cover main-image"></a>
+                <a href=""><img src="{{ URL('images/shoes/SuperSAllWhite.jpg') }}" alt="" class="object-cover main-image"></a>
                     <div class="pt-1 hidden group-hover:inline-flex gap-[2px]">
-                        <img src="{{ URL('images/shoes/aj1midwhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackwhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
-                        <img src="{{ URL('images/shoes/aj1midblackred.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/SuperSAllWhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/SuperSWhite.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
+                        <img src="{{ URL('images/shoes/SuperSBlack.jpg') }}" alt="" class="object-cover size-14 hover-image pb-[2px] hover:bg-black">
                     </div>
                     <div class="py-4 flex justify-between">
                         <div class=""><a href="">
-                            <p class="font-semibold">Air Jordan 1</p>
-                            <p>Women's Shoes</p>
-                            <p>2 Colours</p>
-                            <p class="mt-2 font-semibold">₱4,719</p></a>
+                            <p class="font-semibold">Superstar</p>
+                            <p>Men's Shoes</p>
+                            <p>3 Colours</p>
+                            <p class="mt-2 font-semibold">₱5,300</p></a>
                         </div>
                         <div class="flex flex-col items-end justify-end space-y-2">
                             <div class="">

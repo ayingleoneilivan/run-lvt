@@ -23,19 +23,19 @@
                         <a href="/shoes" class="font-semibold">Men</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Women</a>
+                        <a href="/shoes" class="font-semibold ">Women</a>
                     </li>
                     <li class="hover:underline hover:underline-offset-8 decoration-2">
-                        <a href="" class="font-semibold ">Kids</a>
+                        <a href="/shoes" class="font-semibold ">Kids</a>
                     </li>
                 </ul>
             </div>
 
             <div class="absolute sm:static collapse sm:visible">
                 <div class="space-x-4">
-                <button href="#"><i class="ph-bold ph-user"></i></button>
-                <button href="#"><i class="ph-bold ph-heart-straight"></i></button>
-                <button href="#"><i class="ph-bold ph-bag"></i></button>
+                <a href="/signin"><i class="ph-bold ph-user"></i></a>
+                <a href="/signin"><i class="ph-bold ph-heart-straight"></i></a>
+                <a href="/checkout"><i class="ph-bold ph-bag"></i></a>
                 
                 
                 </div>
@@ -114,7 +114,7 @@
                     <div class="py-4">
                         <p class="font-semibold">Air Jordan 1</p>
                         <p>Men's Shoes</p>
-                        <p>2 Colours</p>
+                        <p>3 Colours</p>
                         <p class="py-2 font-semibold">₱4,719</p>
                     </div>
                 </div>
@@ -126,10 +126,10 @@
                     </a>
                     </div>
                     <div class="py-4">
-                        <p class="font-semibold">Stan Smith</p>
+                        <p class="font-semibold">Samba OG</p>
                         <p>Men's Shoes</p>
-                        <p>2 Colours</p>
-                        <p class="py-2 font-semibold">₱4,719</p>
+                        <p>3 Colours</p>
+                        <p class="py-2 font-semibold">₱6,800</p>
                     </div>
                 </div>
 
@@ -140,10 +140,10 @@
                     </a>
                     </div>
                     <div class="py-4">
-                        <p class="font-semibold">Samba OG</p>
+                        <p class="font-semibold">Stan Smith</p>
                         <p>Men's Shoes</p>
-                        <p>2 Colours</p>
-                        <p class="py-2 font-semibold">₱4,719</p>
+                        <p>3 Colours</p>
+                        <p class="py-2 font-semibold">₱4,900</p>
                     </div>
                 </div>
         </div>
